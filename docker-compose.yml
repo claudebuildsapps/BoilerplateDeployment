@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: 
+      context: ./src/frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./src/frontend:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+    depends_on:
+      - backend
+      
+  backend:
+    build:
+      context: ./src/backend
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./src/backend:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+      - PORT=3001

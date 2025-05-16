@@ -35,3 +35,33 @@ coverage/
 # Temporary files
 *.swp
 *.swo
+
+# Added by Collaborative Intelligence
+.claude/
+CLAUDE.md
+.env.claude
+*.pem
+*.key
+*.crt
+logs/
+*.log
+__pycache__/
+target/
+vendor/
+package-lock.json
+yarn.lock
+Cargo.lock
+.vim/
+*.sublime-workspace
+.cache/
+.pytest_cache/
+.eslintcache
+.parcel-cache/
+*.py[cod]
+*$py.class
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+*.egg
